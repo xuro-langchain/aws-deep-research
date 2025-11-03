@@ -29,9 +29,9 @@ from langgraph.config import get_store
 from mcp import McpError
 from tavily import AsyncTavilyClient
 
-from agents.optimized.configuration import Configuration, SearchAPI
-from agents.optimized.prompts import summarize_webpage_prompt
-from agents.optimized.state import ResearchComplete, Summary
+from agent.configuration import Configuration, SearchAPI
+from agent.prompts import summarize_webpage_prompt
+from agent.state import ResearchComplete, Summary
 
 ##########################
 # Tavily Search Tool Utils

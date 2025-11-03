@@ -16,10 +16,10 @@ from langchain_core.runnables import RunnableConfig
 from langgraph.graph import END, START, StateGraph
 from langgraph.types import Command
 
-from agents.optimized.configuration import (
+from agent.configuration import (
     Configuration,
 )
-from agents.optimized.prompts import (
+from agent.prompts import (
     clarify_with_user_instructions,
     compress_research_simple_human_message,
     compress_research_system_prompt,
@@ -28,7 +28,7 @@ from agents.optimized.prompts import (
     research_system_prompt,
     transform_messages_into_research_topic_prompt,
 )
-from agents.optimized.state import (
+from agent.state import (
     AgentInputState,
     AgentState,
     ClarifyWithUser,
@@ -39,7 +39,7 @@ from agents.optimized.state import (
     ResearchQuestion,
     SupervisorState,
 )
-from agents.optimized.utils import (
+from agent.utils import (
     anthropic_websearch_called,
     get_all_tools,
     get_api_key_for_model,
